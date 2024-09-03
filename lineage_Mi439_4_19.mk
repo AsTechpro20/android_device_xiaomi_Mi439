@@ -9,7 +9,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
-# Inherit some common EvolutionX stuff.
+# Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Kernel
@@ -24,6 +24,12 @@ PRODUCT_PACKAGES += \
     xiaomi_olive_overlay_lineage
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
+
+#ProjectEverest stuffs.
+EVEREST_MAINTAINER := AsTechpro20
+TARGET_SUPPORTS_BLUR := true
+WITH_GAPPS := false
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := Mi439_4_19
