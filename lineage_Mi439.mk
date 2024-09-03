@@ -25,6 +25,12 @@ PRODUCT_PACKAGES += \
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 
+#ProjectEverest stuffs.
+EVEREST_MAINTAINER := AsTechpro20
+TARGET_SUPPORTS_BLUR := true
+WITH_GAPPS := false
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := Mi439
 PRODUCT_NAME := lineage_Mi439
